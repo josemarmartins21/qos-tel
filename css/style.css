@@ -415,6 +415,14 @@ footer p:last-child > a:hover {
         opacity: 1;
     }
 
+    /* Diferenciais */
+    #diferenciais article {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        text-align: center;
+        gap: 30px;
+    }
+
     /* Planos de internet */
 
     #planos-de-internet {
