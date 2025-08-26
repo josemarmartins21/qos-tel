@@ -31,11 +31,12 @@ p {
     min-height: 90vh;
     background: black url(../img/familia-usuando-internet.jpg) no-repeat center top;
     margin-bottom: 100px;
+    
 }
 
 #fundo-preto {
     background-color: rgba(0, 0, 0, 0.322);
-    min-height: 90vh;
+    min-height: 100vh;
    
 }
 
@@ -368,6 +369,9 @@ footer p:last-child > a:hover {
 
     /* header */
 
+    header {
+        padding: 0 4px;
+    }
     div#fundo-preto {
         padding: 0;
     }
@@ -401,7 +405,6 @@ footer p:last-child > a:hover {
     }
 
     #background {
-        padding: 0 5px;
         background-image: url(../img/hero-celular.jpg);
         background-position: center ;
         min-height: 100vh;
@@ -410,6 +413,8 @@ footer p:last-child > a:hover {
 
     section#hero {
         gap: 12px;
+        margin: 0;
+        
        
     }
 
