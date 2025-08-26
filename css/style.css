@@ -36,10 +36,12 @@ p {
 #fundo-preto {
     background-color: rgba(0, 0, 0, 0.322);
     min-height: 90vh;
-    padding: 0 10px;
+   
 }
 
 header {
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.329);
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
@@ -66,10 +68,11 @@ header a {
 
 #hero {
     height: 65vh;
-    
     color: white;
     display: flex;
+    width: 97vw;
     gap: 10px;
+    margin: auto;
     justify-content: center;
     align-items: start;
     flex-flow: column nowrap;
