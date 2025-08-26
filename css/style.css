@@ -1,0 +1,461 @@
+
+:root {
+    --cor-principal: #0D3973;
+    --cor-botoes: #049DBF;
+    --footer: #0D0D0D;
+    --cor-destaque: #038C7F;
+}
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+body, html {
+    min-height: 100vh;
+    position: relative;
+    /*border: 5px solid rgb(9, 72, 145);
+    border-radius: 10px;
+    border-bottom: none;*/
+}
+
+p {
+    line-height: 1.8em;
+}
+
+/* Hero */
+#background {
+    min-height: 90vh;
+    background: black url(../img/familia-usuando-internet.jpg) no-repeat center top;
+    margin-bottom: 100px;
+}
+
+#fundo-preto {
+    background-color: rgba(0, 0, 0, 0.322);
+    min-height: 90vh;
+    padding: 0 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+menu {
+    align-self: center;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0 4px;
+}
+
+#cta {
+    display: none;
+}
+
+#hero {
+    height: 65vh;
+    
+    color: white;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: start;
+    flex-flow: column nowrap;
+
+}
+
+#hero h1 {
+    font-size: 2.1em;
+}
+
+#hero h3 {
+    width: 380px;
+    line-height: 1.5em;
+}
+
+#hero a {
+    color: white;
+    text-decoration: none;
+    background-color: var(--cor-botoes);
+    font-weight: bold;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: .6;
+}
+
+#hero a:hover {
+    opacity: 1;
+    transition: opacity .3s;
+    transition-timing-function: ease;
+}
+
+/* Nossos diferenciais */
+
+section#diferenciais {
+    margin-bottom: 100px;
+}
+
+section#diferenciais h2 {
+    text-align: center;
+    margin: 0 0 40px 0;
+    font-weight: 700;
+}
+
+section#diferenciais > article {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+section#diferenciais article > p {
+    margin: 10px;
+}
+
+section#diferenciais p > img {
+    display: block;
+    margin: auto;
+}
+
+
+/* Planos de internet */
+
+#planos-de-internet {
+    background: blue url(../img/planos-img.jpg) no-repeat left center fixed;
+    color: white;
+    height: 300px;
+}
+
+#planos-de-internet  article {
+    background-color: rgba(0, 0, 0, 0.61);
+    padding-bottom: 20px;
+    height: 100%;
+}
+
+#planos-de-internet > article {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.card-plan {
+    flex: 1 1 400px;
+    height: 150px;
+    padding: 10px;
+
+    position: relative;
+
+}
+
+.card-plan a i {
+    font-size: 2.5em;
+    margin: 10px 0;
+
+}
+
+
+.card-plan > a {
+    background-color: var(--cor-destaque);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: .8em;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+
+/* Depoimento de clientes */
+
+#depoimento-de-clientes {
+    margin: 100px 0;
+}
+
+#depoimento-de-clientes {
+    display: flex;
+    gap: 10px;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+#depoimento-de-clientes > h2 {
+    flex: 0 1 100%;
+    text-align: center;
+    padding-bottom: 40px;
+    font-weight: 700;
+}
+
+.depoimento {
+    padding: 10px;
+    flex: 0 1 280px;
+    height: 140px;
+    border-radius: 10px;
+    border: 2px solid var(--cor-principal);
+
+}
+
+.depoimento:hover {
+    background-color: var(--cor-principal);
+    color: white;
+    cursor: pointer;
+    transition: background-color .3s;
+    transition-timing-function: ease-out;
+
+}
+
+.depoimento p {
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* Velocidade e perfomance */
+
+section#velocidade h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Perguntas frequentes */
+
+section#perguntas {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+section#perguntas  p:nth-child(odd) {
+    text-indent: 30px;
+    text-decoration: underline;
+}
+
+section#perguntas  p:nth-child(even) {
+    font-weight: 700;
+}
+
+section#perguntas > article {
+    flex: 0 1 50%;
+}
+
+#img-perguntas {
+    display: flex;
+    align-items: center;
+}
+
+section#perguntas article h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+div#img-perguntas img {
+    width: 350px;
+   
+}
+
+/* Suporte */
+
+section#suporte {
+    height: 220px;
+    padding: 0 15px;
+    margin: 130px 0 0 0;
+}
+
+#suporte h2 {
+    margin-bottom: 20px;
+}
+
+section#suporte > ul > li {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: inside;
+    list-style-type: none;
+}
+
+ul li i {
+    color: #0D3973;
+    font-size: 1.2em;
+}
+
+/* Localização */
+
+section#localizacao {
+    margin-bottom: 100px;
+}
+
+section#localizacao > h2 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+
+footer {
+    background-color: #0D0D0D;
+    padding: 10px 5px;
+    display: flex;
+    gap: 10px;
+    flex-flow: column nowrap;
+    align-items: center;
+    color: white;
+}
+
+footer #redes-sociais {
+    align-self: flex-start;
+}
+
+footer h1 {
+    font-size: 4.5em;
+}
+
+footer p#dev > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer p#dev > a:hover {
+    text-decoration: underline;
+
+}
+
+footer i {
+    color: white;
+    font-size: 1.7em;
+}
+
+footer i:hover {
+    cursor: pointer;
+    color: rgb(235, 235, 11);
+    transition: color .3s;
+}
+
+footer p:last-child > a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+
+    /* header */
+
+    div#fundo-preto {
+        padding: 0;
+    }
+
+    header ul li {
+        display: none;
+    }
+
+    header ul li:last-child {
+        display: block;
+        background-color: var(--cor-botoes);
+        padding: 10px;
+        border-radius: 10px;    
+        opacity: 1;
+    }
+
+    menu {
+        align-self: center;
+    }
+
+    header img {
+        width: 180px;
+    }
+
+    header #cta {
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        text-align: center; 
+        border: 1px solid var(--cor-botoes);
+    }
+
+    #background {
+        padding: 0 5px;
+        background-image: url(../img/hero-celular.jpg);
+        background-position: center ;
+        min-height: 100vh;
+       
+    }
+
+    section#hero {
+        gap: 12px;
+       
+    }
+
+    section#hero a {
+        margin: 0 auto;
+        opacity: 1;
+    }
+
+    /* Planos de internet */
+
+    #planos-de-internet {
+        height: 322px;
+    }
+
+   /* Perguntas frequentes */
+
+   #perguntas {
+    flex-wrap: wrap;
+   }
+
+   #perguntas img {
+    display: none;
+   }
+
+   section#perguntas > article {
+        flex: 1;   
+        text-align: center; 
+   }
+
+   section#perguntas > article > p:nth-child(even) {
+    margin: 0;
+    text-align: left;
+    padding-left: 3px;
+   }
+
+   section#perguntas > article > p {
+    margin-bottom: 10px;
+
+   }
+
+
+    /* Localização */
+
+    #localizacao {
+        text-align: center;
+    }
+
+    #localizacao > iframe {
+        width: 90%;
+    }
+
+}
